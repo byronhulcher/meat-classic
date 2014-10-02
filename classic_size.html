@@ -1,0 +1,87 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>Meatspaces Classic Size (meat-classic)</title>
+
+  <!-- <link rel="shortcut icon" href="favicon.ico">
+ -->
+  <style type="text/css">
+
+    #bookmarklet {
+      background-color: #f181ad;
+      border-radius: 6px;
+      color: #fff;
+      display: block;
+      font-family: sans-serif;
+      height: 100px;
+      line-height: 100px;
+      margin: 10em auto 5em;
+      text-align: center;
+      text-decoration: none;
+      width: 210px;
+    }
+
+    #bookmarklet:hover {
+      background-color: #eee;
+      border: 1px solid #f181ad;
+      color: #f181ad;
+    }
+
+    h5 {
+      color: #666;
+      text-align: center;
+    }
+
+    ol {
+      font-size: 16px;
+      margin: 0 auto 100px;
+      text-align: left;
+      width: 280px;
+    }
+
+    ul {
+      color: #999;
+      font-size: 13px;
+      margin: 0 auto 100px;
+      text-align: left;
+      width: 280px;
+    }
+
+    li a, footer a {
+      color: #f181ad;
+    }
+
+    li a:hover {
+      color: #aaa;
+    }
+
+    footer {
+      color: #aaa;
+      font-size: 14px;
+      font-style: italic;
+      margin: 100px auto;
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+<body>
+  <a id="bookmarklet" href="javascript:(function(){var style=document.createElement('style');style.appendChild(document.createTextNode('body.classic-size video{width:135px;height:100px}body.classic-size #video-preview{width:135px;height:100px}body.classic-size #padding{height:102px}body.classic-size li{height:100px}body.classic-size li p{height:83px}body.classic-size .debugger{bottom:25px;left:55px}body.classic-size #composer-message{margin-left:140px}'));document.head.appendChild(style);document.body.className+=' classic-size';var button=document.createElement('button');button.id='change-size';button.appendChild(document.createTextNode('Change Size'));button.onclick=function(){if(document.body.className.indexOf('classic-size')>-1){document.body.className=document.body.className.replace('classic-size','');}else{document.body.className+=' classic-size';}};document.getElementById('menu').appendChild(button);})();">meat-classic 0.0.2</a>
+
+  <ol>
+    <li>missing the old meatspace video sizing?</li>
+    <li>click and drag button to your bookmarks bar</li>
+    <li>load your favorite <a href="http://chat.meatspac.es">meatspace chat</a></li>
+  </ol>
+
+  <h5>updates to 0.0.2</h5>
+  <ul>
+    <li>New button to toggle the size change</li>
+  </ul>
+
+  <footer>
+    written by <a href="https://www.twitter.com/hypirlink">@hypirlink</a><br>
+    this page markup stolen from <a href="https://www.twitter.com/llkats">@llkats</a>
+  </footer>
+
+</body></html>

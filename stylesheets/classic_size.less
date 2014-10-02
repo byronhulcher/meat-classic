@@ -1,0 +1,35 @@
+@video-width: 135px;
+@video-height: 100px;
+
+body.classic-size {
+	video {
+	width: @video-width;
+	height: @video-height;
+}
+
+	#video-preview {
+		width: @video-width;
+		height: @video-height;
+	}
+
+	#padding {
+	  height: @video-height + 2;
+	}
+
+	li {
+		height: @video-height;
+	}
+
+	li p {
+		height: @video-height - 17; 
+	}
+
+	.debugger {
+		bottom: 25px;
+		left: 55px;
+	}
+
+	#composer-message {
+		margin-left: @video-width + 5;
+	}
+}
