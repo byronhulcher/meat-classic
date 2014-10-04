@@ -1,11 +1,11 @@
 @video-width: 135px;
 @video-height: 100px;
 
-body.classic-size {
+.classic {
 	video {
-	width: @video-width;
-	height: @video-height;
-}
+		width: @video-width;
+		height: @video-height;
+	}
 
 	#video-preview {
 		width: @video-width;
@@ -31,5 +31,9 @@ body.classic-size {
 
 	#composer-message {
 		margin-left: @video-width + 5;
+	}
+
+	.timestamp {
+		left: auto;
 	}
 }

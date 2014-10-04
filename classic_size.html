@@ -66,12 +66,19 @@
 
 </head>
 <body>
-  <a id="bookmarklet" href="javascript:(function(){document.body.className+=' classic-size';if(!document.getElementById('meat-classic-css')){var style=document.createElement('style');style.id=&quot;meat-classic-css&quot;;style.appendChild(document.createTextNode('body.classic-size video{width:135px;height:100px}body.classic-size #video-preview{width:135px;height:100px}body.classic-size #padding{height:102px}body.classic-size li{height:100px}body.classic-size li p{height:83px}body.classic-size .debugger{bottom:25px;left:55px}body.classic-size #composer-message{margin-left:140px}'));document.head.appendChild(style);}if(!document.getElementById('change-size')){var button=document.createElement('button');button.id='change-size';button.appendChild(document.createTextNode('Change Size'));button.onclick=function(){if(document.body.className.indexOf('classic-size')>-1){document.body.className=document.body.className.replace(/classic-size/g,'');}else{document.body.className+=' classic-size';}};document.getElementById('menu').appendChild(button);}})();">meat-classic 0.0.3</a>
+  <a id="bookmarklet" href="javascript:(function(){document.body.className+=' classic';if(!document.getElementById('classic-css')){var s=document.createElement('style');s.id=&quot;classic-css&quot;;s.appendChild(document.createTextNode('.classic video{width:135px;height:100px}.classic #video-preview{width:135px;height:100px}.classic #padding{height:102px}.classic li{height:100px}.classic li p{height:83px}.classic .debugger{bottom:25px;left:55px}.classic #composer-message{margin-left:140px}.classic .timestamp{left:auto}'));document.head.appendChild(s);}if(!document.getElementById('toggle-classic')){var b=document.createElement('button');b.id='toggle-classic';b.appendChild(document.createTextNode('Change Size'));b.onclick=function(){document.body.className=document.body.className.indexOf('classic')>-1?document.body.className.replace(/classic/g,''):document.body.className+=' classic';};document.getElementById('menu').appendChild(b);}})();">meat-classic 0.0.4</a>
   <ol>
     <li>missing the old meatspace video sizing?</li>
     <li>click and drag button to your bookmarks bar</li>
     <li>load your favorite <a href="http://chat.meatspac.es">meatspace chat</a></li>
   </ol>
+
+  <h5>updates to 0.0.4</h5>
+  <ul>
+    <li>Timestamp css fix</li>
+    <li>Modified id's and classes</li>
+    <li>shaved ~100 bytes off bookmarklet code</li>
+  </ul>
 
   <h5>updates to 0.0.3</h5>
   <ul>
